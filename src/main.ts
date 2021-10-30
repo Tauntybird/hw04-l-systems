@@ -136,7 +136,8 @@ function loadScene() {
   screenQuad = new ScreenQuad();
   screenQuad.create();
 
-  cylinder = new Mesh("./cylinder.obj", vec3.fromValues(0, 0, 0));
+  // cylinder = new Mesh("./cylinder.obj", vec3.fromValues(0, 0, 0));
+  cylinder = new Mesh("cylinder.obj", vec3.fromValues(0, 0, 0));
   cylinder.create();
   let transformCols0Array: Array<number> = [];
   let transformCols1Array: Array<number> = [];
@@ -145,7 +146,8 @@ function loadScene() {
   let colorsArray: Array<number> = [];
   let numInstancesCylinder: number = 0;
 
-  fruit = new Mesh("./fruit.obj", vec3.fromValues(0, 0, 0));
+  // fruit = new Mesh("./fruit.obj", vec3.fromValues(0, 0, 0));
+  fruit = new Mesh("fruit.obj", vec3.fromValues(0, 0, 0));
   fruit.create();
   let transformCols0ArrayFruit: Array<number> = [];
   let transformCols1ArrayFruit: Array<number> = [];
@@ -154,7 +156,8 @@ function loadScene() {
   let colorsArrayFruit: Array<number> = [];
   let numInstancesFruit: number = 0;
 
-  leaf = new Mesh("./leaf.obj", vec3.fromValues(0, 0, 0));
+  // leaf = new Mesh("./leaf.obj", vec3.fromValues(0, 0, 0));
+  leaf = new Mesh("leaf.obj", vec3.fromValues(0, 0, 0));
   leaf.create();
   let transformCols0ArrayLeaf: Array<number> = [];
   let transformCols1ArrayLeaf: Array<number> = [];
