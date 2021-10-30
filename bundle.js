@@ -6172,7 +6172,8 @@ function loadScene() {
     let zAxis = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 1);
     screenQuad = new __WEBPACK_IMPORTED_MODULE_2__geometry_ScreenQuad__["a" /* default */]();
     screenQuad.create();
-    cylinder = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mesh__["a" /* default */]("./cylinder.obj", __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 0));
+    // cylinder = new Mesh("./cylinder.obj", vec3.fromValues(0, 0, 0));
+    cylinder = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mesh__["a" /* default */]("cylinder.obj", __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 0));
     cylinder.create();
     let transformCols0Array = [];
     let transformCols1Array = [];
@@ -6180,7 +6181,8 @@ function loadScene() {
     let transformCols3Array = [];
     let colorsArray = [];
     let numInstancesCylinder = 0;
-    fruit = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mesh__["a" /* default */]("./fruit.obj", __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 0));
+    // fruit = new Mesh("./fruit.obj", vec3.fromValues(0, 0, 0));
+    fruit = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mesh__["a" /* default */]("fruit.obj", __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 0));
     fruit.create();
     let transformCols0ArrayFruit = [];
     let transformCols1ArrayFruit = [];
@@ -6188,7 +6190,8 @@ function loadScene() {
     let transformCols3ArrayFruit = [];
     let colorsArrayFruit = [];
     let numInstancesFruit = 0;
-    leaf = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mesh__["a" /* default */]("./leaf.obj", __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 0));
+    // leaf = new Mesh("./leaf.obj", vec3.fromValues(0, 0, 0));
+    leaf = new __WEBPACK_IMPORTED_MODULE_7__geometry_Mesh__["a" /* default */]("leaf.obj", __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["c" /* vec3 */].fromValues(0, 0, 0));
     leaf.create();
     let transformCols0ArrayLeaf = [];
     let transformCols1ArrayLeaf = [];
