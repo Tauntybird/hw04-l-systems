@@ -13,12 +13,11 @@ void main()
     // out_Col = vec4(dist) * fs_Col;
 
     // out_Col = fs_Col;
+    vec4 lightPos = vec4(50., 50., 10., 0.);
+    vec4 fs_LightVec = lightPos - fs_Pos;
 
-    vec4 fs_LightVec = vec4(1., 1., 2., 0.);
-
-    //TODO: lambert shading
     vec4 diffuseColor = fs_Col;
-    float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec));
+    float diffuseTerm = dot(normalize(fs_Nor), normalize(fs_LightVec)); // / length(fs_LightVec);
     diffuseTerm = clamp(diffuseTerm, 0.f, 1.f);
     float ambientTerm = 0.2;
 
