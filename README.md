@@ -11,9 +11,6 @@ Example render from front view:
 Close-up view of end of a branch:
 ![](loquat_tree_closeup.png)
 
-View of platform below horse that is part of bounding sphere:
-![](blue_horse_final_platform.png)
-
 ## Explanation
 - I used a random number generator to help expand my LSystem string in unique ways. I also used a random number generator when drawing the LSystem, mainly to determine what degree to rotate around X, Y, and Z axis.
 - The loquats are only drawn on the last possible recursion depth so that they are only drawn on ends of branches. The leaves are scattered on different locations along a branch but mostly branches that are near the last possible recursion depth (so you won't have leaves coming from the trunk).
